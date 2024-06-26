@@ -1,5 +1,5 @@
 {% set name = "django-sql-explorer" %}
-{% set version = "4.3" %}
+{% set version = "5.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c853bc0a270b290646d4ca731769f1e223a151e5724aee69e3b3967f0cf7b96f
+  sha256: b5fbe5bdf8e86768e252f8ef69a0fb336e8255b5bef504aaefff83440871080e
 
 build:
   noarch: python
@@ -20,6 +20,8 @@ requirements:
     - sphinx
     - pip
   run:
+    - cryptography >=42.0
+    - django-cryptography-django5 ==2.2
     - python >=3.8
     - django >=3.2
     - sqlparse >=0.4.0
