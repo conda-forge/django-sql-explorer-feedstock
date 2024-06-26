@@ -20,12 +20,12 @@ requirements:
     - sphinx
     - pip
   run:
-    - cryptography >=42.0
-    - django-cryptography-django5 ==2.2
     - python >=3.8
     - django >=3.2
     - sqlparse >=0.4.0
     - requests >=2.2
+    - cryptography >=42.0
+    - django-cryptography-django5 ==2.2
 
 test:
   imports:
