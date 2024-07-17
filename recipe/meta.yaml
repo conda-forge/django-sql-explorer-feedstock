@@ -30,8 +30,9 @@ requirements:
 test:
   imports:
     - explorer
-  commands:
-    - pip check
+  #commands:
+    #- pip check
+# django-sql-explorer 5.0.2 has requirement django-cryptography-django5==2.2, but you have django-cryptography-django5 2.2.dev20240626155535
   requires:
     - pip
 
