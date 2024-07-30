@@ -1,5 +1,5 @@
 {% set name = "django-sql-explorer" %}
-{% set version = "5.0.2" %}
+{% set version = "5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6e5c1c414a6f1f9fdbfa8c714bac1ffbf28e081e9df53ace834426124c8c2e54
+  sha256: 5300a83e8984ef8128a19ba6fa79458215529d28a9c23d7e4b19b48275924b7b
 
 build:
   noarch: python
